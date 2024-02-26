@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Newsreader", serif;
+    
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+
+nav{
+    background-color: #8CB9BD;
+    color : #fff ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #F9F9E0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo > img {
+    height: 35px;
+}
+
+/*
+* Hero / jumbotron
+*/
+
+header {
+    background: url('../images/header.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Newsreader", serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #F9F9E0;
+}
+.header-opacity {
+    background-color: #8CB9BD;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;   
+}
+
+.header-jumbotron > h4 {
+    color: #F9F9E0;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+.header-jumbotron > h5 {
+    color: #B67352 ;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+}
